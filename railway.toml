@@ -1,0 +1,11 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = ""
+watchPaths = []
+
+[deploy]
+rootDirectory = "backend"
+startCommand = "python app.py"
+healthcheckPath = "/"
+restartPolicyType = "ON_FAILURE"
+numReplicas = 1
